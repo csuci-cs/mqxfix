@@ -20,7 +20,7 @@ MQ131_NOx = (2.05, 7.87, 2.7, -2.26, 0)
 
 def transformReading(rs, r0, desiredReading):
     x = rs/r0
-    ok = x > desiredReading[tupIndexMinX] && x < desiredReading[tupIndexMaxX]
+    ok = x > desiredReading[tupIndexMinX] and x < desiredReading[tupIndexMaxX]
 
     a = desiredReading[tupIndexA]
     b = desiredReading[tupIndexB]
